@@ -5,19 +5,6 @@
 #include <vector>
 #include <iomanip>
 
-/*
-  KOMPLETTERING:
-  4-2: Använd inte nyckelordet this i onödan. <-- ÄNDRAT 24/11
-
-  KOMMENTAR: <-- ÄNDRAT 24/11
-  Hade varit lämpligt att flytta ut main och de relaterade funktionerna
-  till en helt egen fil och hålla denna fil enbart för Components. 
-  När filer blir långa blir det svårare och svårare att navigera i koden, 
-  att bryta ut delar utav koden i egna filer avhjälper detta och underlättar
-  läsbarheten. 
-
- */
-
 // Component
 Component::Component(std::string const& name, shared_ptr<Connection>& i, shared_ptr<Connection>& o)
     : name{name}, in{i}, out{o} {}

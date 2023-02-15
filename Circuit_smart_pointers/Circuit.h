@@ -7,21 +7,6 @@
 
 using namespace std;
 
-/*
-  KOMPLETTERING: 
-  5-4: Använd referens till konstant (const&) för inparameter av klasstyp <-- GJORT 24/11
-
-  6-6: Deklarera medlemsfunktioner som inte ändrar på objektets tillstånd const. <-- GJORT 24/11
-
-  Ni har satt print() som en pure virtual funktion men trots det har ni skrivit  <-- ÄNDRAT 24/11
-  funktioner för varje enskild komponent som gör i praktiken samma sak (även om 
-  koden ser olika ut för de olika klasserna här är det inte funktionella 
-  skillnader). Om ett beteende delas utav alla underklasser ska funktionen 
-  implementeras i föräldern (Component) och underklasserna kan då använda 
-  det beteendet. 
-
- */
-
 struct Connection {
         double volts; 
 };
